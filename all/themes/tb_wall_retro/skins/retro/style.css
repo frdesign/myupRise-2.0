@@ -1,0 +1,1607 @@
+/**
+  Retro Color
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(fonts/league_gothic_regular/stylesheet.css);
+
+body {
+	background: url("images/bg-body.jpg") left top repeat;
+	color: #666;
+	font-size: 12px !important;
+}
+
+body.bf-a, 
+.bf-a .form-text, 
+.snf-a .site-name, 
+.ssf-a .site-slogan, 
+.ptf-a #page-title, 
+.ntf-a .node-title, 
+.ctf-a .comment-title, 
+.btf-a .block-title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+	color: #D36B45;
+}
+
+a:hover, 
+a:active, 
+a:focus {
+  color: #9FC37B;
+  text-decoration: underline;
+}
+
+.author span.name_author {
+	color: #f95e07;
+}
+
+/* Superfish */
+.block .sf-menu.sf-style-wall li {
+  background: url('images/nav-boder-01.png') repeat-y right top;
+}
+
+.block .sf-menu.sf-style-wall a {
+    border-bottom: none;
+	border-right: none;
+    color: #fff;
+    font-family: 'LeagueGothicRegular',sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+    height: 58px;
+    line-height: 58px;
+    padding: 0 20px;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: none 0s ease 0s;
+}
+
+.block .sf-menu.sf-style-wall a:hover, 
+.block .sf-menu.sf-style-wall a:focus, 
+.block .sf-menu.sf-style-wall a:active {
+  background: none;
+  color: #D36B45;
+}
+
+.block .sf-menu.sf-style-wall li.first a {
+  border-left: none;
+}
+
+.block .sf-menu.sf-style-wall li.menuparent.sfHover li a {
+   background: none;
+   color: #666;
+}
+
+.block .sf-menu.sf-style-wall ul {
+  background: #ececec;
+  border: 0;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-top: 10px;
+  min-width: 180px;
+  z-index: 500;
+}
+
+.block .sf-menu.sf-style-wall ul:after,
+.block .sf-menu.sf-style-wall ul:after {
+	background: url("images/arrow-01.png") no-repeat 90% center;
+	width: 22px;
+	height: 10px;
+	display: block;
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 30px;
+}
+
+.block .sf-menu.sf-style-wall ul li {
+   background: none;
+   display: block; 
+   border-bottom: 1px solid #d5d5d5;
+   border-top: 1px solid #fff;
+   float: none;
+   list-style: none;
+}
+
+.block .sf-menu.sf-style-wall ul li,
+.block .sf-menu.sf-style-wall ul li a {
+  border-radius: 3px;
+}
+
+.block .sf-menu.sf-style-wall ul li.first {
+  background: none;
+  border-top: 0;
+  padding-top: 0; 
+}
+
+.block .sf-menu.sf-style-wall ul li a {
+  border-top: none;
+  box-sizing: border-box;
+  color: #666;
+  display: block;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 420px;
+  padding: 0 20px;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 0 #FFF;
+  transition: background-color .5s ease 0s, color 0.2s linear 0s;
+  white-space: nowrap;
+  text-transform: none;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+}
+
+.block .sf-menu.sf-style-wall li.menuparent.sfHover li a:hover,
+.block .sf-menu.sf-style-wall li.menuparent.sfHover li a:focus,
+.block .sf-menu.sf-style-wall li.menuparent.sfHover li a:active,
+.block .sf-menu.sf-style-wall ul li.sfHover a.menuparent,
+.block .sf-menu.sf-style-wall ul li a.menuparent:hover,
+.block .sf-menu.sf-style-wall ul li a.menuparent:focus,
+.block .sf-menu.sf-style-wall ul li a.menuparent:active {
+  background: #F8F8F8;
+  color: #D36B45;
+}
+
+.block .sf-menu.sf-style-wall li.menuparent.sfHover li.first a:hover {
+  border-radius: 3px 3px 0 0;
+  padding-top: none;
+}
+
+.block .sf-menu.sf-style-wall li.menuparent.sfHover > a {
+  color: #D36B45;
+}
+
+.block .sf-menu.sf-style-wall .active-trail .sf-depth-1 {
+  background: none;
+  color: #9FC37B;
+  text-decoration: none;
+}
+
+/*header*/
+#header-wrapper {
+	background: url('images/bg-01.png') repeat-x bottom left;
+	height: 63px;
+}
+
+#header-wrapper .container {
+  background: url("images/line-color-01.png") left top repeat-x;
+  padding-top: 5px;
+}
+
+#header-wrapper .grid-inner {
+  padding: 0 10px 0 0;
+}
+
+#header #search-block-form {
+	border: 1px solid #8e6468;
+	background: #795356;
+	border-radius: 3px;
+	margin-top: 12px;
+}
+
+#header #search-block-form .form-text {
+	background: url("images/icon-search.png") no-repeat 8px 50%;
+	border: none;
+	color: #ccc;
+	font-size: 92%;
+	font-weight: bold;
+	height: auto;
+	padding: 4px 5px 4px 25px;
+	transition: all 0.7s ease 0s;
+	width: 120px;
+	box-shadow: 0 0 10px rgba(0,0,0,.2) inset;
+}
+
+#header #search-block-form .form-text:focus, 
+#header #search-block-form .form-text:hover {
+	background: url("images/icon-search-black.png") no-repeat 8px 50%;
+	background-color: #fff;
+    box-shadow: none;
+    color: #000;
+}
+
+#logo {
+	position: absolute;
+	top: 0;
+	width: auto;
+	z-index: 99;
+}
+
+#logo img {
+	margin: 0;
+	width: auto;
+}
+
+/* Sidebar menu */
+#menu-left-wrapper,
+#menu-left-inner {
+	background: none;
+}
+
+.region-menu-left {
+  margin-left: 0;  
+  width: 120px;
+}
+
+#menu-left-wrapper {
+  width: 130px;
+}
+
+.not-logged-in #menu-left-wrapper {
+  top: 80px;
+}
+
+#menu-left-wrapper .block-inner {
+	border-top: none;
+	margin: 0;
+	padding: 0 0 50px;
+}
+
+#menu-left-wrapper ul.menu {
+  margin-top: 10px;
+}
+
+#menu-left-wrapper ul.menu li.expanded {
+	border-bottom: 0;
+	padding: 20px 0 0 ;
+}
+
+#menu-left-wrapper ul.menu > li.expanded > a {
+	background: none;
+    border: none;
+    color: #333;
+	font-family: 'LeagueGothicRegular', sans-serif;
+    font-weight: 400;
+    font-size: 145%;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+    padding: 0 10px 0 0;
+    text-transform: uppercase;
+}
+
+#menu-left-wrapper ul.menu li.expanded ul {
+	background: 0;
+	border-bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar .block-title {
+	border-bottom: 1px solid #e5e5e5;
+	color: #333333;
+	font-family: 'PT Serif', serif;
+	font-size: 0.9em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.block ul.menu li.expanded ul li a:hover, 
+.block ul.menu li.expanded ul li a:focus, 
+.block ul.menu li.expanded ul li a:active {
+  color: #E4744B;
+  text-decoration: none;
+}
+
+.block ul.menu li.expanded ul li a,
+.block ul.menu li.expanded.active-trail ul li a {
+  background: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #666;
+  display: inline-block;
+  max-width: 100px;
+  overflow: hidden;
+  padding: 2px 5px;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.block ul.menu li.expanded ul li a:hover, 
+.block ul.menu li.expanded ul li a:focus, 
+.block ul.menu li.expanded ul li a:active,
+.block ul.menu li.expanded.active-trail ul li a.active,
+.block ul.menu li.expanded.active-trail ul li a:hover,
+.block ul.menu li.expanded.active-trail ul li a:focus, 
+.block ul.menu li.expanded.active-trail ul li a:active {
+  color: #E4744B;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+/*  Main content  */
+#main-wrapper {
+	top: 83px;
+}
+
+.left-menu-existed .page-main-inner,
+.front .left-menu-existed .page-main-inner, 
+.page-showcase .left-menu-existed .page-main-inner, 
+.page-taxonomy-term .left-menu-existed .page-main-inner,
+.left-menu-existed #system-messages-wrapper .grid-inner {
+  margin-left: 0;
+  padding-left: 131px; 
+}
+
+.left-menu-existed .page-main-inner {
+  background: #fff;  
+  border: 1px solid #DEDEDE;
+  border-right: none;
+  margin-left: 131px;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.no-sidebars .left-menu-existed .page-main-inner, 
+.page-showcase .left-menu-existed .page-main-inner, 
+.page-taxonomy-term .left-menu-existed .page-main-inner, 
+.left-menu-existed #system-messages-wrapper .grid-inner {
+  background: none;
+  border: none; 
+}
+
+.sidebar .grid-inner, .main-content-inner.grid-inner, 
+.page-showcase .main-content-inner.grid-inner {
+  padding: 15px;
+}
+
+/*  Badge */
+.grid.views-col.tb-wall-hot-badge .node-title:before,
+.grid.views-col.tb-wall-new-badge .node-title:before,
+.grid.views-col.tb-wall-top-badge .node-title:before {
+	background: url("images/bg-hot.png") left top no-repeat;
+	font-family: 'Droid Sans', sans-serif;
+	border-radius: 0;
+	color: #fff;
+	content: "Hot";
+	display: inline-block;
+	font-size: 10px;
+	padding: 0 5px 0 10px;
+	text-align: left;
+	text-indent: 0;
+	text-transform: uppercase;
+	vertical-align: top;
+	position: absolute;
+	left: -18px;
+	top: 0;
+	width: 30px;
+	height: 20px;
+	line-height: 17px;
+	z-index: 6;
+}
+
+.grid.views-col.tb-wall-new-badge .node-title:before {
+   background: url("images/bg-new.png") left top no-repeat;
+   content: "New";
+}
+
+.grid.views-col.tb-wall-top-badge .node-title:before {
+   background: url("images/bg-top.png") left top no-repeat;
+   content: "Top";
+}
+
+.grid-inner .node-tb-social-feed .item-symbol, 
+.node-tb-social-feed .item-symbol {
+  margin-left: 3px;
+  margin-top: -5px;
+  float: right;
+}
+
+.grid.views-col.tb-wall-hot-badge .node-title,
+.grid.views-col.tb-wall-new-badge .node-title,
+.grid.views-col.tb-wall-top-badge .node-title {
+	position: relative;
+	text-indent: 25px;
+}
+
+.badge_hot .block-title:after,
+.badge_new .block-title:after,
+.badge_top .block-title:after {
+  background: url("images/bg-hot.png") left top no-repeat;  
+  color: #fff;
+  content: "Hot";
+  display: inline-block;
+  font-family: 'Droid Sans', sans-serif;	
+  font-size: 10px;
+  height: 20px;
+  line-height: 17px;
+  margin-top: 5px;
+  padding: 0 5px 0 10px;
+  text-align: left;
+  width: 30px;
+}
+
+.badge_new .block-title:after {
+  background: url("images/bg-new.png") left top no-repeat;  
+  content: "New";
+}
+
+.badge_top .block-title:after {
+  background: url("images/bg-top.png") left top no-repeat;  
+  content: "Top";
+}
+.grid.views-col.tb-wall-red-background .node-links ul.links {
+  border-top: 1px solid #AC898C;
+}
+
+.grid.views-col.tb-wall-red-background .grid-inner .node:before {
+  background: url("images/bg-item-footer-hilite.png") repeat-x left bottom;
+  color: #fff;
+  border-color: #fff;
+}
+
+.grid.views-col.tb-wall-red-background .grid-inner .node {
+   background-color: #9C7073;
+   border-color: #fff;
+   color: #fff;
+}
+
+.grid.views-col.tb-wall-red-background .grid-inner .node:hover:before {
+   background: url("images/bg-item-footer-blank.png") repeat-x left bottom;
+   border-color: #DAD9CF;
+}
+
+.grid.views-col.tb-wall-red-background .grid-inner .node:hover {
+  background: #fff;
+  color: #666;
+}
+
+.grid.views-col.tb-wall-red-background .node:hover > .submitted {
+  color: #666;
+}
+
+.no-sidebars .grid.views-col.tb-wall-red-background .grid-inner .node:hover .node-links ul.links {
+  border-top-color: #eee;
+  border-left-color: #DAD9CF;
+  border-right-color: #DAD9CF;
+}
+
+.grid.views-col.tb-wall-red-background .node-links ul.links li.node-readmore a:before {
+  /*background: url("images/bg-read-more-white-l.png") no-repeat left top;*/
+}
+
+.grid.views-col.tb-wall-red-background .node-links ul.links li.node-readmore a {
+  /*background: url("images/bg-read-more-white-r.png") no-repeat right top;*/
+  color: #9C7073;
+}
+
+
+/* Node */
+.node-links ul.links {
+	font-size: 1em;
+}
+
+.node-links ul.links li {
+  background: none;
+  padding-left: 0;
+  list-style: circle;
+}
+.node-links ul.links li a,
+.item-list ul li a {
+  color: #333;
+  font-size: 1em;
+}
+
+.node-links ul.links li a:hover, 
+.node-links ul.links li a:active, 
+.node-links ul.links li a:focus,
+.item-list ul li a:hover,
+.item-list ul li a:focus,
+.item-list ul li a:active {
+  color: #9FC37B;
+  text-decoration: none;
+}
+
+.node-title a, .node-title a:visited {
+	color: #333;
+}
+
+.node-title a:hover, .node-title a:active, .node-title a:focus {
+  color: #9FC37B;
+  text-decoration: none;
+}
+
+.grid.views-col .grid-inner .node:before {
+  background: url("images/bg-item-footer-blank.png") left bottom repeat-x;
+  border-left: 1px solid #dad9cf;
+  border-right: 1px solid #dad9cf;
+	display: block;
+	content: "";
+	width: 100%;
+	position: absolute;
+	left: 0;
+	height: 12px;
+	bottom: -12px;
+	margin: 0 -1px;
+}
+
+.grid.views-col .grid-inner .node {
+    border-color: #dad9cf;
+  	margin: 10px 5px;
+	padding: 15px 15px 2px;
+}
+
+.grid.views-col .grid-inner .node:hover {
+  box-shadow: none;
+  border-color: #dad9cf;
+}
+
+.grid.views-col .grid-inner .node:hover .node-title a {
+  color: #D36B45;
+  text-decoration: none;
+}
+
+.grid.views-col .node-links ul.links {    
+    border-top: 1px solid #eee;
+    color: #999;
+    margin: 10px -15px 0;
+    padding: 10px 15px 5px;
+    text-shadow: none;
+
+}
+
+.grid.views-col .grid-inner .node-links ul.links li a {
+  color: #666;
+}
+
+.grid.views-col .grid-inner .node-links ul.links li.node-readmore a:before {
+	/*background: url("images/bg-read-more-l.png") no-repeat left top;*/
+	content: "";    
+	position: absolute;
+	left: -10px;
+	top: 0;
+	width: 10px;
+	height: 20px;
+}
+
+.grid.views-col .grid-inner .node-links ul.links li.node-readmore {
+  float: right;
+}
+
+.grid.views-col .grid-inner .node-links ul.links li.node-readmore a {
+    /*background: url("images/bg-read-more-r.png") no-repeat right top;*/
+	color: #666;
+	padding: 2px 10px 3px 0px;
+	border: none;
+	border-radius: 0px;
+	margin: 0;
+	position: relative;
+	text-shadow: none;
+}
+
+.grid.views-col .grid-inner .node:hover li.node-readmore a:before,
+.grid.views-col.tb-wall-red-background .node:hover .node-links ul.links li.node-readmore a:before {
+  /*background: url("images/bg-read-more-over-l.png");*/
+}
+
+.grid.views-col .grid-inner .node:hover li.node-readmore a,
+.grid.views-col.tb-wall-red-background .node:hover .node-links ul.links li.node-readmore a {
+    /*background: url("images/bg-read-more-over-r.png") no-repeat right top;*/
+	color: #fff;
+	text-shadow: none;
+	border: none;
+}
+
+.node-links ul.links li.node-readmore a:hover,
+.node-links ul.links li.node-readmore a:focus {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.node-links ul.links li.node-readmore {
+  float: right;
+}
+
+.node-links ul.links li.node-readmore a,
+span.button input.form-submit {
+	background: #F0F0F0;
+	border: 1px solid #ccc;
+	box-shadow: none;
+	color: #666;
+	filter: none;
+	font-weight: normal;
+	text-shadow: 1px 1px 0 #fff;
+	border-radius: 3px;   
+	display: block;
+	padding: 2px 5px;
+}
+
+span.button input.form-submit {
+  display: inline;
+  float: none;
+  padding: 4px 5px;
+}
+
+.node-links ul.links li.node-readmore a:hover,
+.node-links ul.links li.node-readmore a:focus,
+span.button input.form-submit:hover,
+span.button input.form-submit:focus {
+	background: #D36B45;
+    border-color: #D36B45;
+	color: #fff;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.page-showcase .node .field-type-image {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.grid.views-col.tb-wall-black-background .grid-inner .node {
+  background: #4B4B4B;
+}
+
+.grid.views-col.tb-wall-black-background .grid-inner .node:hover {
+  background: #fff;
+  color: #666;
+}
+
+.grid.views-col.tb-wall-black-background .node:hover > .submitted a {
+  color: #333;
+}
+
+.grid.views-col.tb-wall-black-background .node-links ul.links li a {
+  color: #ccc
+}
+
+.grid.views-col.tb-wall-black-background .node:hover .node-links ul.links li a {
+  color: #666
+}
+
+.grid.views-col.tb-wall-black-background .node-links ul.links {
+  border-top-color: #666;
+}
+
+.grid.views-col.tb-wall-black-background .grid-inner .node:before {
+  background: url("images/bg-item-footer-dark.png") repeat-x left bottom;  
+}
+
+.grid.views-col.tb-wall-black-background .grid-inner .node:hover:before {
+  background: url("images/bg-item-footer-blank.png") repeat-x left bottom;  
+}
+
+.grid.views-col.tb-wall-black-background .node-links ul.links li.node-readmore a:before {
+  /*background: url("images/bg-read-more-white3-l.png") no-repeat left top;*/
+}
+
+.grid.views-col.tb-wall-black-background .node-links ul.links li.node-readmore a {
+	/*background: url("images/bg-read-more-white-r.png") no-repeat right top;*/
+	color: #999;
+}
+
+.grid.views-col.tb-wall-black-background .grid-inner .node:hover li.node-readmore a:before {
+  /*background: url("images/bg-read-more-over-l.png") no-repeat left top;*/
+}
+
+.grid.views-col.tb-wall-black-background .node:hover .node-links ul.links li.node-readmore a {
+  /*background: url("images/bg-read-more-over-r.png") no-repeat right top;*/
+  color: #fff;
+}
+
+.grid.views-col.tb-wall-black-background .node:hover .node-links ul.links {
+  border-top-color: #eee;
+}
+
+
+.grid.views-col.tb-wall-green-background .grid-inner .node {
+  background: #8AC0B0;
+}
+
+.grid.views-col.tb-wall-yellow-background .grid-inner .node {
+  background: #ffd386;
+}
+
+.grid.views-col.tb-wall-green-background .grid-inner .node:before {
+  background: url("images/bg-item-footer-green.png") repeat-x left bottom;  
+}
+
+.grid.views-col.tb-wall-yellow-background .grid-inner .node:before {
+  background: url("images/bg-item-footer-yellow.png") repeat-x left bottom;  
+}
+
+.grid.views-col.tb-wall-blue-background .grid-inner .node {
+  background: #8AC0B0;
+}
+
+.grid.views-col.tb-wall-blue-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-green-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-yellow-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-red-background .grid-inner .node:hover {
+  background: #fff;
+  color: #666;
+}
+
+.grid.views-col.tb-wall-blue-background .node:hover > .submitted a,
+.grid.views-col.tb-wall-green-background .node:hover > .submitted a,
+.grid.views-col.tb-wall-yellow-background .node:hover > .submitted a,
+.grid.views-col.tb-wall-red-background .node:hover > .submitted a {
+  color: #333;
+}
+
+.grid.views-col.tb-wall-blue-background .node-links ul.links li a,
+.grid.views-col.tb-wall-green-background .node-links ul.links li a,
+.grid.views-col.tb-wall-yellow-background .node-links ul.links li a,
+.grid.views-col.tb-wall-red-background .node-links ul.links li a {
+  color: #fff
+}
+
+.grid.views-col.tb-wall-blue-background .node:hover .node-links ul.links li a,
+.grid.views-col.tb-wall-green-background .node:hover .node-links ul.links li a,
+.grid.views-col.tb-wall-yellow-background .node:hover .node-links ul.links li a,
+.grid.views-col.tb-wall-red-background .node:hover .node-links ul.links li a {
+  color: #666
+}
+
+.no-sidebars .grid.views-col.tb-wall-blue-background .node-links ul.links {
+  border-top-color: #9EC9BC;
+}
+
+.grid.views-col.tb-wall-blue-background .grid-inner .node:before {
+  background: url("images/bg-item-footer-sport.png") repeat-x left bottom;  
+}
+
+.grid.views-col.tb-wall-blue-background .grid-inner .node:hover:before,
+.grid.views-col.tb-wall-green-background .grid-inner .node:hover:before,
+.grid.views-col.tb-wall-yellow-background .grid-inner .node:hover:before {
+  background: url("images/bg-item-footer-blank.png") repeat-x left bottom;  
+}
+
+.grid.views-col.tb-wall-blue-background .node-links ul.links li.node-readmore a:before,
+.grid.views-col.tb-wall-green-background .node-links ul.links li.node-readmore a:before,
+.grid.views-col.tb-wall-yellow-background .node-links ul.links li.node-readmore a:before {
+  /*background: url("images/bg-read-more-white-l.png") no-repeat left top;*/
+}
+
+.grid.views-col.tb-wall-blue-background .node-links ul.links li.node-readmore a,
+.grid.views-col.tb-wall-green-background .node-links ul.links li.node-readmore a,
+.grid.views-col.tb-wall-yellow-background .node-links ul.links li.node-readmore a {
+	/*background: url("images/bg-read-more-white-r.png") no-repeat right top;*/
+	color: #8AC0B0;
+}
+
+.grid.views-col.tb-wall-blue-background .grid-inner .node:hover li.node-readmore a:before,
+.grid.views-col.tb-wall-green-background .grid-inner .node:hover li.node-readmore a:before,
+.grid.views-col.tb-wall-yellow-background .grid-inner .node:hover li.node-readmore a:before {
+  /*background: url("images/bg-read-more-over-l.png") no-repeat left top;*/
+}
+
+.grid.views-col.tb-wall-blue-background .node:hover .node-links ul.links li.node-readmore a,
+.grid.views-col.tb-wall-green-background .node:hover .node-links ul.links li.node-readmore a,
+.grid.views-col.tb-wall-yellow-background .node:hover .node-links ul.links li.node-readmore a {
+  /*background: url("images/bg-read-more-over-r.png") no-repeat right top;*/
+  color: #fff;
+}
+
+.grid.views-col.tb-wall-blue-background .node:hover .node-links ul.links,
+.grid.views-col.tb-wall-green-background .node:hover .node-links ul.links,
+.grid.views-col.tb-wall-yellow-background .node:hover .node-links ul.links {
+  border-top-color: #eee;
+}
+
+.grid.views-col.tb-wall-green-background .node:hover > .submitted,
+.grid.views-col.tb-wall-blue-background .node:hover > .submitted,
+.grid.views-col.tb-wall-yellow-background .node:hover > .submitted {
+  color: #666;
+}
+
+.grid.views-col.tb-wall-green-background .node-links ul.links {
+  border-color: #9EC9BC;
+}
+.grid.views-col.tb-wall-green-background .node-links ul.links li.node-readmore a {
+  color: #9ad0d6;
+}
+.grid.views-col.tb-wall-yellow-background .node-links ul.links li.node-readmore a {
+  color: #ffd386;
+}
+
+
+/* Primary menu */
+ul.primary {
+  border-bottom-color: #E4744B;
+}
+
+ul.primary li a {
+  background-color: #E4744B;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+}
+
+ul.primary li a:hover,
+ul.primary li a:focus {
+  background-color: #fff;
+  border-color: #E4744B #E4744B #fff;
+  color: #E4744B;
+}
+
+ul.primary li.active a {
+  color: #E4744B;
+  border-color: #E4744B #E4744B #fff;
+  text-decoration: none;
+}
+
+/* Breakcrumb */
+#breadcrumb-wrapper {
+  margin-left: 10px;
+}
+
+#breadcrumb-wrapper h2 {
+  display: none;
+}
+
+/* Scroll */
+.myScrollbarV {
+  width: 7px;
+}
+
+.myScrollbarV > div {
+  background-color: #666;
+}
+
+/**
+  * Sidebar
+  */
+#sidebar-first-wrapper .grid-inner {
+  background: #fff;
+  border: 1px solid #DEDEDE;
+  border-left: none;
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.sidebar .block-title:before {
+    background: url("images/bullet-02.png") no-repeat left top;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin-right: 10px;
+    margin-top: 8px;
+    vertical-align: top;
+    width: 15px;
+}
+
+.sidebar .block-title {
+	background: none;
+	border: 0;
+	color: #333;
+	font-family: 'LeagueGothicRegular', sans-serif;
+  	font-weight: 400;
+  	font-size: 200%;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.sidebar .block-inner {
+  border: none;
+}
+
+.sidebar .item-list ul li {
+  background: url("images/bullet-1.png") no-repeat left 7px;
+  line-height: 1.1;
+  padding: 5px 0 5px 10px;
+}
+
+.sidebar .item-list ul li a {
+	color: #D36B45;
+}
+
+.sidebar .item-list ul li a:hover,
+.sidebar .item-list ul li a:focus {
+  color: #9FC37B;
+  text-decoration: none;
+}
+
+.sidebar .item-list ul.popular_tags li {
+  background: none;
+}
+
+.sidebar .item-list ul.popular_tags li a {
+  background: none;
+  padding: 0 10px 0 0;
+}
+
+.sidebar .view-archive .item-list ul li {
+    background: url("images/icon-calendar.png") no-repeat left center;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0 5px 20px;
+}
+
+
+/* Tag */
+.field-type-taxonomy-term-reference {
+	font-size: 1em;
+}
+
+.field-type-taxonomy-term-reference .field-label {
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    vertical-align: middle;	
+	background: #ddd;
+    border-radius: 2px;
+    color: #999;  
+    height: 12px;
+    line-height: 1;
+    margin-right: 10px;
+    padding: 3px 5px 5px 5px;
+    position: relative;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.field-type-taxonomy-term-reference ul li {
+	background: none;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.field-type-taxonomy-term-reference ul li a {
+	color: #666;
+}
+
+.field-type-taxonomy-term-reference ul li a:hover,
+.field-type-taxonomy-term-reference ul li a:focus {
+	color: #9FC37B;
+	text-decoration: none;
+}
+
+/* Pager */
+.item-list ul.pager {
+  border: none;
+  overflow: hidden;
+}
+
+.item-list .pager li, ul.pager li {
+  float: left;
+  border: none;
+  line-height: normal;
+  margin: 0;
+  padding: 0 5px;
+  width: auto;
+}
+
+.item-list ul.pager li a {
+ 	background: none;
+    box-shadow: none;
+    color: #D36B45;
+    display: inline-block;
+	height: auto;
+	line-height: normal;
+    padding: 0;
+    text-shadow: 1px 1px #FFFFFF;
+	width: auto;
+}
+
+.item-list ul.pager li a:hover, 
+.item-list ul.pager li a:active, 
+.item-list ul.pager li a:focus {  
+    color: #9FC37B;
+    text-decoration: none;
+}
+
+ul.pager li.pager-first, ul.pager li.pager-last {
+  display: inline-block;
+}
+
+ul.pager li.pager-previous, ul.pager li.pager-next,
+ul.pager li.pager-first, ul.pager li.pager-last  {
+  background: none;
+  border: none;
+  text-indent: 0;
+  height: auto;
+  line-height: normal;
+  width: auto;
+  padding: 0 5px;
+  margin: 0;
+}
+
+ul.pager li.pager-next {
+  float: left;
+}
+
+ul.pager li.pager-current {
+	background: none;    
+    color: #333;
+	width: auto;
+}
+
+.grid.views-col .grid-inner .node:hover {  
+	transition: none !important;
+}
+
+
+/*CUSTOM OVERRIDES ----------------------------------------*/
+
+/*HEADER ***************/
+
+/*Get rid of rainbowy images on original theme*/
+div#header-wrapper .container {
+    background-image: none;
+}
+
+/*Place and size myupRise logo*/
+a#logo img {
+	width: 120px;
+	padding: 10px 0 0 20px;
+}
+
+/*get rid of brown background image*/
+div#header-wrapper {
+    background: none repeat scroll 0% 0% #EC1C24; /*Red color*/
+}
+
+/*Move menu to right*/
+div#menu-bar-wrapper {
+	margin-left: 180px;
+}
+
+ul.sf-main-menu li a {
+	letter-spacing: 1px;
+}
+
+.block .sf-menu.sf-style-wall a.active {
+	background: none;
+	color: #93d2b8;
+	text-decoration: none;
+}
+
+/*Change color of active main menu link*/
+.block .sf-menu.sf-style-wall .active-trail .sf-depth-1 {
+	color: #93d2b8;
+}
+
+/*Search form*/
+#header form#search-block-form {
+    background: #00A7AE; /*teal color*/
+    border: 1px solid #0C888E;
+}
+
+#header form#search-block-form:hover {
+    background: white;
+    border: 1px solid #0C888E;
+}
+
+
+/*BODY ***************/
+
+/*Move main wrapper up a bit*/
+div#main-wrapper {
+	top: 45px;
+}
+
+body {
+	background-image: none;
+	font-family: Sans-Serif !important;
+}
+
+/*Player inside Modal */
+body div#player {
+	width: 90% !important;
+}
+
+/* Colorbox popup iframe */
+body.tb-wall-popup-iframe {
+	padding: 15px;
+}
+
+/*NODE *********************/
+
+/*Increase node content size*/
+.node-full div.node-content {
+	font-size: 1.5em;
+	color: black;
+}
+
+.node-quotes.node-full div.node-content {
+	font-size: 1em;
+	color: black;
+}
+
+.node-quotes.node-full #comments {
+	margin-top: 2em;
+}
+
+/*Hide node title from certain node types - quotes*/
+.node-quotes h2.node-title {
+	display: none;
+}
+
+/*Make node preview titles less bold more spaced out*/
+.grid.views-col h2.node-title {
+	letter-spacing: .05em;
+}
+
+/*Make quote's text prettier*/
+.node-quotes div.field-name-body {
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+
+/*Hide citations field on Quote node create form*/
+div.form-item-quotes-citation {
+	display: none;
+}
+
+/*Move node links in quote previes downs so they dont crash against quote author*/
+.grid.views-col .node-links ul.links {
+	margin-top: 20px;
+}
+
+/*Tabs*/
+div.tabs li a {
+	background-color: #EC1C24;
+}
+
+/*Node creator photo*/
+div.user-picture {
+	width: 55px !important;
+}
+
+div.user-picture img {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px; 
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+
+/*Position Video embed description lower*/
+div.video-embed-description {
+	padding-top: 10px;
+}
+
+/*Uprise flag styles
+Images are in TB wall theme inside Skins image folder*/
+.node-full span.flag-post-hi-five a,
+span.flag-uprise a,
+span.flag-follow-users a {
+	font-weight: 500;
+	font-size: 1.2em !important;
+	border:none;
+	color: white !important;
+	line-height: 25px;
+	padding: 6px 12px !important;
+	text-decoration: none;
+	margin-bottom: 5px;
+	border-radius: 5px; 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.pane-user-flag-follow-users-link {
+	text-align: center;
+}
+
+.node-full span.flag-post-hi-five a.flag-action,
+span.flag-uprise a.flag-action,
+span.flag-follow-users a.flag-action  {
+	background-color: #EC1C24;	
+}
+
+.node-full span.flag-post-hi-five a.flag-action:focus,
+.node-full span.flag-post-hi-five a.flag-action:hover,
+span.flag-uprise a.flag-action:focus,
+span.flag-uprise a.flag-action:hover,
+span.flag-follow-users a.flag-action:focus,
+span.flag-follow-users a.flag-action:hover {
+	background-color: gray;
+}
+
+.node-full span.flag-post-hi-five a.unflag-action,
+span.flag-uprise a.unflag-action,
+span.flag-follow-users a.unflag-action {
+	background-color: gray;
+}
+
+.node-full span.flag-post-hi-five a.unflag-action:focus,
+.node-full span.flag-post-hi-five a.unflag-action:hover,
+span.flag-uprise a.unflag-action:focus,
+span.flag-uprise a.unflag-action:hover,
+span.flag-follow-users a.unflag-action:focus,
+span.flag-follow-users a.unflag-action:hover {
+	background-color:  #EC1C24;
+}
+
+span.flag-success-message {
+	margin-top: 14px;
+}
+
+div.pane-user-flag-follow-users-link span.flag-success-message {
+	margin-top: 7px;
+}
+
+/*Fix comment photo floating to the top of the page*/
+.comment .user-picture {
+	position: relative !important;
+	padding-bottom: 15px;
+}
+
+/*hide comment title*/
+h3.comment-title {
+	display: none;
+}
+
+/*Make comment body text larger*/
+div.field-name-comment-body p {
+	font-size: 16px;
+}
+
+/*Make node link button text white */
+.node-full .node-links ul.links li a {
+	color: #D36B45;
+}
+
+/*Hide text format selector for web link content type*/
+form#web-link-node-form fieldset#edit-field-link-und-0-format {
+	display: none;
+}
+#block-system-help {
+	background-position: 14px 9px;
+}
+
+
+/*Hide help text in quote content type create form*/
+div#field-video-link-add-more-wrapper div.form-item-field-video-link-und-0-description div.description {
+	display: none;
+}
+
+/*Give ADDTOANY social links more space top/bottom*/
+span.addtoany_list {
+	line-height: 40px;
+}
+
+/*FRONT PAGE OVERRIDES******************************************/
+
+/*Move front page slideshow down a bit*/
+div.fluid_container {
+	margin-top: 25px;
+}
+
+
+
+/*Fix ugly layout for web link teaser in front page*/
+.opengraph-filter .right {
+	margin-left: 0;
+	float: left;
+}
+
+
+/*Get rid of ripped paper effect on botton of teasers*/
+.grid.views-col .grid-inner .node:before {
+	display: none;
+}
+
+/*Fill gap left from bottom of teasers by adding padding*/
+.grid.views-col .grid-inner .node {
+	padding-bottom: 10px;
+}
+
+/*Color change for front page teasers*/
+
+.grid.views-col.tb-wall-black-background .grid-inner .node {
+  background: #4B4B4B;
+}
+
+.grid.views-col.tb-wall-green-background .grid-inner .node {
+  background: #8AC0B0;
+}
+
+.grid.views-col.tb-wall-yellow-background .grid-inner .node {
+  background: #EC1C24;
+}
+
+.grid.views-col.tb-wall-blue-background .grid-inner .node {
+  background: #266f69;
+}
+
+.grid.views-col.tb-wall-red-background .grid-inner .node {
+   background-color: #EC1C24;
+   border-color: #fff;
+   color: #fff;
+}
+
+.grid.views-col.tb-wall-black-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-blue-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-green-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-yellow-background .grid-inner .node:hover,
+.grid.views-col.tb-wall-red-background .grid-inner .node:hover,
+.grid.views-col .grid-inner .node:hover{
+	border: 2px solid #EC1C24;
+	padding: 14px 14px 10px 14px;
+}
+
+/*Unify read more links*/
+
+.grid.views-col .grid-inner .node-links ul.links li.node-readmore a:focus,
+.grid.views-col .grid-inner .node-links ul.links li.node-readmore a:hover {
+	background-color: #EC1C24 !important;
+	color: white !important;
+}
+
+.grid.views-col .grid-inner .node-links ul.links li.node-readmore a {
+	background-color: gray;
+	color: white;
+	padding-left: 7px;
+	font-size: 1.1em;
+}
+
+
+
+/*Front page profiled cloud views*/
+
+div.view-front-page-member-views ul li.views-row {
+	float: left;
+	background: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: .8em;
+}
+
+div.view-front-page-member-views ul li.views-row img{
+	padding: 0;
+	margin: 2px 0;
+}
+
+div.pane-front-page-member-views h2.pane-title {
+	clear: both !important;
+	color: #EC1C24;
+}
+
+div.pane-front-page-member-views div.more-link {
+	clear: both !important;
+	font-size: 1.2em;
+}
+
+
+
+/*PANELS USER PROFILE OVERRIDES ------------------------------------*/
+
+/*Make upRise level pretty*/
+#profile-title {
+	padding: 0 0 20px 0;
+}
+
+
+#profile-user-name  {
+	color: #00A7AE;
+	margin: 0 15px 10px 20px;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*Make upRise level pretty*/
+#aura-level {
+	margin: 0 0 0 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#aura-level-value {
+	background-color: #EC1C24;
+	font-size: 16px;
+	padding: 5px 9px 5px 9px;
+	color: white;
+	border-radius: 10px; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+div#aura-container {
+	margin-bottom: 5px;
+	min-height: 300px;
+}
+
+div#aura-inner {
+	position: relative;
+}
+
+
+/*Make aura circular*/
+canvas#aura {
+	border-radius: 140px; 
+	-moz-border-radius: 140px;
+	-webkit-border-radius: 140px;
+	position: absolute;
+	margin: 0 auto !important;
+	top: 0; left: 0; bottom: 0; right: 0;
+	
+	
+}
+
+#public_profile div#aura-container .user-picture {
+	width: 100px !important;
+	height: auto !important;
+	display: inline-block;
+	position: absolute;
+	margin: 0 auto !important;
+	top: 84px; left: -8px; bottom: 0; right: 0;
+	
+}
+
+#public_profile div#aura-container .user-picture img{
+	width: 100px !important;
+	height: auto !important;
+	margin: 0;
+	border-radius: 55px; 
+	-moz-border-radius: 55px;
+	-webkit-border-radius: 55px;
+	border: 5px solid white;
+}
+
+
+/*Fix view panel divider which is inconsistent*/
+#public-profile .panel-separator,
+.panel-flexible .panel-separator {
+	border: solid .1em #f0eff1;
+	background-image: none;
+	margin: 1.5em 0;
+	height: 0px !important;
+}
+
+/*Fix ugly links field label in edit profile tab*/
+#field-links-values th label {
+	padding-left: 20px;
+}
+
+/*Move cancel account button away from save button*/
+span.edit-cancel {
+	float: right;
+}
+
+/*Make follower/following count larger*/
+.view-followers .view-header, .view-followers-tab .view-header {
+	font-size: 1.7em;
+	font-weight: 700;
+	color: #00A7AE;
+}
+
+/*Make user gallery view lists look better*/
+.view-followers .view-content ul,
+.view-followers-tab .view-content ul,
+.view-members-tabs .view-content ul {
+	list-style-type: none;
+}
+
+.view-followers .view-content ul li,
+.view-followers-tab .view-content ul li,
+.view-members-tabs .view-content ul li {
+	float: left;
+	background: none;
+	margin: 0 0 5px 0;
+	
+}
+
+
+/*fix overlap of 2 views on page*/
+.view-followers .view-content {
+	clear: both;
+}
+
+/*Visual separation between both views*/
+.view-followers div.view-footer .view-content{
+	border-top: solid 5px #EC1C24;
+}
+
+/*Edit account tab*/
+div.form-item-picture-delete {
+	display: none;
+}
+
+
+.profile-content .grid.views-col .grid-inner .node {
+	width: 100%;
+}
+
+
+/*********MISCELANEOUS***********************************************/
+
+/*OVERLAY USER CONTENT TYPE CREATION FOMRS***********************************************/
+
+/*Get rid of header showing in overlay and move content back up into window*/
+
+div#overlay-content div#header-wrapper {
+	display: none;
+}
+
+div#overlay-content div#main-wrapper {
+	top: 0px;
+}
+
+/*change close button color*/
+#overlay-close, #overlay-close:hover {
+	background: transparent url("/sites/default/files/misc/ctools_close.png") no-repeat;
+}
+
+
+
+/*FORMS*********************************************************/
+
+/*fix login form text fields being way too wide*/
+#user-login .form-item input.form-text {
+	width: 334px;
+}
+
+
+/*EXPLORE TABS*********************************************************/
+
+/*fix overlap of 2 views on page & give visual separation*/
+.view-members-tabs .view-footer {
+	clear: both;
+	border-top: solid 1px #EC1C24;
+}
+
+/*INTRO PAGE*********************************************************/
+
+/*Hide node header*/
+#article-1546 .header {
+	display: none;
+}
+
+#intro {
+	padding: 0 20px;
+}
+
+
+#intro p.intro-body {
+	font-size: 1em;
+	color: #EC1C24;
+	font-weight: bold;
+}
+
+.intro-cont {
+	clear: both;
+	margin: 20px 0;
+}
+
+.intro-graphic {
+	float: left;
+	margin-right: 30px;
+}
+
+.intro-text1,
+.intro-text3{
+	padding-top: 50px;
+}
+
+
+#intro p,
+#intro ul {
+	font-size: .8em;
+}
+
+/*Link to intro page on header*/
+.region-header #block-block-21 {
+	margin: 15px 0 0 -55px;
+}
+
+.region-header #block-block-21 a {
+	color: white;
+	text-decoration: none;
+}
+
+.region-header #block-block-21 a:hover,
+.region-header #block-block-21 a:focus {
+	color: #93d2b8;
+}
+
+/*GLOBAL*********************************************************/
+
+/*Make notifications stand out more*/
+#system-messages-wrapper .grid-inner div.messages {
+	margin: 35px 10px 5px;
+	border: 3px solid #EC1C24;
+	color: #EC1C24;
+	font-size: 1.3em;
+	font-weight: 600;
+}
