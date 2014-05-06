@@ -1047,6 +1047,11 @@ ul.sf-main-menu li a {
 	letter-spacing: 1px;
 }
 
+/*Fix main menu items stacking instead of being inline*/
+ul.sf-main-menu li {
+	float: left;
+}
+
 .block .sf-menu.sf-style-wall a.active {
 	background: none;
 	color: #93d2b8;
@@ -1499,9 +1504,14 @@ div.form-item-picture-delete {
 }
 
 
+fieldset#edit-timezone {
+	display: none;
+}
+
 .profile-content .grid.views-col .grid-inner .node {
 	width: 100%;
 }
+
 
 
 /*********MISCELANEOUS***********************************************/
