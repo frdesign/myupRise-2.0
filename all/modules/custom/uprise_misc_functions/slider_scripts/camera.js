@@ -37,9 +37,9 @@
 		
 		loaderColor			: '#eeeeee', 
 		
-		loaderBgColor		: '#222222', 
+		loaderBgColor		: '#EC1C24', 
 		
-		loaderOpacity		: .8,	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
+		loaderOpacity		: 1,	//0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1
 		
 		loaderPadding		: 2,	//how many empty pixels you want to display between the loader and its background
 		
@@ -79,7 +79,7 @@
 		
 		thumbnails			: false,
 		
-		time				: 5000,	//milliseconds between the end of the sliding effect and the start of the nex one
+		time				: 6000,	//milliseconds between the end of the sliding effect and the start of the nex one
 		
 		transPeriod			: 1500,	//lenght of the sliding effect in milliseconds
 		

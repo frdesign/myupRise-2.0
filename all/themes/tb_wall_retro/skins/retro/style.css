@@ -1020,6 +1020,14 @@ ul.pager li.pager-current {
 
 /*CUSTOM OVERRIDES ----------------------------------------*/
 
+/*Color palette
+#EC1C24  - brigh red
+#0C888E  - teal
+#266f69  - darker teal
+#93d2b8  - light teal
+#f8c613  - yellow
+*/
+
 /*HEADER ***************/
 
 /*Get rid of rainbowy images on original theme*/
@@ -1058,6 +1066,11 @@ ul.sf-main-menu li {
 	text-decoration: none;
 }
 
+.block .sf-menu.sf-style-wall a:hover,
+.block .sf-menu.sf-style-wall a:active{
+	color: #93d2b8;
+}
+
 /*Change color of active main menu link*/
 .block .sf-menu.sf-style-wall .active-trail .sf-depth-1 {
 	color: #93d2b8;
@@ -1065,7 +1078,7 @@ ul.sf-main-menu li {
 
 /*Search form*/
 #header form#search-block-form {
-    background: #00A7AE; /*teal color*/
+    background: #0C888E; /*teal color*/
     border: 1px solid #0C888E;
 }
 
@@ -1074,6 +1087,21 @@ ul.sf-main-menu li {
     border: 1px solid #0C888E;
 }
 
+/*Style how myupRise works link in header*/
+.region-header #block-block-1 {
+	margin: 15px 0 0 -65px;
+}
+
+.region-header #block-block-1 a {
+	color: #fff;
+	font-size: 1.1em;
+	text-decoration: none;
+}
+
+.region-header #block-block-1 a:hover,
+.region-header #block-block-1 a:active {
+	color: #93d2b8;
+}
 
 /*BODY ***************/
 
@@ -1098,6 +1126,11 @@ body.tb-wall-popup-iframe {
 }
 
 /*NODE *********************/
+
+/*Simplify image addition helper text*/
+.form-item-field-status-image-und-0 div.description {
+	display: none;
+}
 
 /*Increase node content size*/
 .node-full div.node-content {
@@ -1377,7 +1410,7 @@ div.pane-front-page-member-views div.more-link {
 
 
 #profile-user-name  {
-	color: #00A7AE;
+	color: #0C888E;
 	margin: 0 15px 10px 20px;
 	font-size: 2em;
 	font-weight: bold;
@@ -1468,7 +1501,7 @@ span.edit-cancel {
 .view-followers .view-header, .view-followers-tab .view-header {
 	font-size: 1.7em;
 	font-weight: 700;
-	color: #00A7AE;
+	color: #0C888E;
 }
 
 /*Make user gallery view lists look better*/
@@ -1503,7 +1536,7 @@ div.form-item-picture-delete {
 	display: none;
 }
 
-
+/*Hide timezone select field in user prof edit*/
 fieldset#edit-timezone {
 	display: none;
 }
@@ -1535,6 +1568,7 @@ div#overlay-content div#main-wrapper {
 
 
 
+
 /*FORMS*********************************************************/
 
 /*fix login form text fields being way too wide*/
@@ -1542,6 +1576,15 @@ div#overlay-content div#main-wrapper {
 	width: 334px;
 }
 
+/*Give legal scrolling field a slight tint*/
+FIELDSET#edit-legal.fieldset.form-wrapper {
+	background-color: #e2e2e2;
+}
+
+FIELDSET#edit-legal.fieldset.form-wrapper legend {
+	font-weight: bold;
+	margin-top: 40px;
+}
 
 /*EXPLORE TABS*********************************************************/
 
@@ -1614,4 +1657,24 @@ div#overlay-content div#main-wrapper {
 	color: #EC1C24;
 	font-size: 1.3em;
 	font-weight: 600;
+}
+
+/*Make submit button stand out*/
+input#edit-submit {
+	background-color: #EC1C24;
+	color: white;
+	text-shadow: none;
+}
+
+input#edit-submit:active,
+input#edit-submit:hover {
+	background-color: white;
+	color: #EC1C24;
+	border-color: #EC1C24;
+}
+
+/*Span to make selected text bold and red*/
+span.red-strong {
+	color: #EC1C24;
+	font-weight: bold;
 }
