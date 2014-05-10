@@ -3,10 +3,14 @@
  * Copyright (c) 2008 Joel Birch
  *
  * Dual licensed under the MIT and GPL licenses:
- *   http://www.opensource.org/licenses/mit-license.php
- *   http://www.gnu.org/licenses/gpl.html
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
  *
  * CHANGELOG: http://users.tpg.com.au/j_birch/plugins/superfish/changelog.txt
+ */
+/*
+ * This is not the original jQuery Supersubs plugin.
+ * Please refer to the README for more information.
  */
 
 (function($){
@@ -100,7 +104,7 @@
         not = (o.retainPath===true) ? o.$path : '';
       o.retainPath = false;
       var $ul = $(['li.',o.hoverClass].join(''),this).add(this).not(not).removeClass(o.hoverClass)
-          .find('>ul').hide().css('visibility','hidden');
+          .find('>ul').addClass('sf-hidden');
       o.onHide.call($ul);
       return this;
     },
@@ -108,7 +112,7 @@
       var o = sf.op,
         sh = sf.c.shadowClass+'-off',
         $ul = this.addClass(o.hoverClass)
-          .find('>ul:hidden').css('visibility','visible');
+          .find('>ul.sf-hidden').hide().removeClass('sf-hidden');
       sf.IE7fix.call($ul);
       o.onBeforeShow.call($ul);
       $ul.animate(o.animation,o.speed,function(){ sf.IE7fix.call($ul); o.onShow.call($ul); });

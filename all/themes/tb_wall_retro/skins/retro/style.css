@@ -1026,6 +1026,7 @@ ul.pager li.pager-current {
 #266f69  - darker teal
 #93d2b8  - light teal
 #f8c613  - yellow
+##e2e2e2  - light gray
 */
 
 /*HEADER ***************/
@@ -1128,7 +1129,8 @@ body.tb-wall-popup-iframe {
 /*NODE *********************/
 
 /*Simplify image addition helper text*/
-.form-item-field-status-image-und-0 div.description {
+.form-item-field-status-image-und-0 div.description,
+.form-item-field-quote-image-und-0 div.description {
 	display: none;
 }
 
@@ -1161,6 +1163,11 @@ body.tb-wall-popup-iframe {
 .node-quotes div.field-name-body {
 	font-size: 1.5em;
 	line-height: 1.3em;
+	font-weight: 500;
+}
+
+.node-quotes div.quotes-author {
+	float: none;
 }
 
 /*Hide citations field on Quote node create form*/
@@ -1171,6 +1178,17 @@ div.form-item-quotes-citation {
 /*Move node links in quote previes downs so they dont crash against quote author*/
 .grid.views-col .node-links ul.links {
 	margin-top: 20px;
+}
+
+/*make preview content type icons smaller*/
+.grid.views-col.tb-wall-grid .grid-inner .node .field-name-field-type-icon img {
+	width: 30px;
+	height: auto;
+}
+
+/*Hide content type icon select field from node create form*/
+.form-item-field-type-icon-und-0 {
+	display: none;
 }
 
 /*Tabs*/
@@ -1272,6 +1290,11 @@ div.field-name-comment-body p {
 	font-size: 16px;
 }
 
+.content .field-name-comment-body {
+	background-color: #e2e2e2;
+	padding: 20px 10px;
+}
+
 /*Make node link button text white */
 .node-full .node-links ul.links li a {
 	color: #D36B45;
@@ -1295,6 +1318,7 @@ div#field-video-link-add-more-wrapper div.form-item-field-video-link-und-0-descr
 span.addtoany_list {
 	line-height: 40px;
 }
+
 
 /*FRONT PAGE OVERRIDES******************************************/
 
@@ -1577,13 +1601,24 @@ div#overlay-content div#main-wrapper {
 }
 
 /*Give legal scrolling field a slight tint*/
-FIELDSET#edit-legal.fieldset.form-wrapper {
-	background-color: #e2e2e2;
+fieldset#edit-legal.fieldset.form-wrapper {
+	
 }
 
-FIELDSET#edit-legal.fieldset.form-wrapper legend {
+fieldset#edit-legal.fieldset.form-wrapper legend {
 	font-weight: bold;
-	margin-top: 40px;
+}
+
+fieldset#edit-legal .legal-terms {
+	background-color: #e2e2e2;
+	height: 11em;
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+
+/*Hide overlay control setting*/
+#edit-overlay-control {
+	display: none;
 }
 
 /*EXPLORE TABS*********************************************************/

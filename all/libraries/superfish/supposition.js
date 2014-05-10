@@ -1,17 +1,17 @@
 /*
-* Supposition v0.2 - an optional enhancer for Superfish jQuery menu widget - LAST UPDATE: MARCH 23rd, 2011
-*
-* Copyright (c) 2008 Joel Birch - based mostly on work by Jesse Klaasse and credit goes largely to him.
-* Special thanks to Karl Swedberg for valuable input.
-* 
-* Dec 28th, 2010 - Modified for the Superfish project for Drupal (http://drupal.org/project/superfish)
-*
-* jQuery version: 1.3.x or higher.
-*
-* Dual licensed under the MIT and GPL licenses:
-* 	http://www.opensource.org/licenses/mit-license.php
-* 	http://www.gnu.org/licenses/gpl.html
-*/
+ * Supposition v0.2 - an optional enhancer for Superfish jQuery menu widget.
+ *
+ * Copyright (c) 2008 Joel Birch - based mostly on work by Jesse Klaasse and credit goes largely to him.
+ * Special thanks to Karl Swedberg for valuable input.
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
+ */
+/*
+ * This is not the original jQuery Supersubs plugin.
+ * Please refer to the README for more information.
+ */
 
 (function($){
   $.fn.supposition = function(){
@@ -22,7 +22,7 @@
       || document.body[dir=='y' ? 'scrollTop' : 'scrollLeft'];
     },
     onHide = function(){
-      this.css({Top:'',Right:'',Bottom:'',Left:''});
+      this.css({bottom:''});
     },
     onBeforeShow = function(){
       this.each(function(){
@@ -48,7 +48,8 @@
         }
         var windowHeight = $w.height(),
         offsetTop = $u.offset().top,
-        menuParentHeight = $u.parent().outerHeight(true),
+        menuParentShadow = ($u.closest('.sf-menu').hasClass('sf-shadow') && $u.css('padding-bottom').length > 0) ? parseInt($u.css('padding-bottom').slice(0,-2)) : 0,
+        menuParentHeight = ($u.closest('.sf-menu').hasClass('sf-vertical')) ? '-' + menuParentShadow : $u.parent().outerHeight(true) - menuParentShadow,
         menuHeight = $u.height(),
         baseline = windowHeight + _offset('y');
         var expandUp = ((offsetTop + menuHeight > baseline) && (offsetTop > menuHeight));
@@ -61,22 +62,22 @@
     };
 
     return this.each(function() {
-    var o = $.fn.superfish.o[this.serial]; /* get this menu's options */
+      var o = $.fn.superfish.o[this.serial]; /* get this menu's options */
 
-    /* if callbacks already set, store them */
-    var _onBeforeShow = o.onBeforeShow,
-    _onHide = o.onHide;
+      /* if callbacks already set, store them */
+      var _onBeforeShow = o.onBeforeShow,
+      _onHide = o.onHide;
 
-    $.extend($.fn.superfish.o[this.serial],{
-    onBeforeShow: function() {
-    onBeforeShow.call(this); /* fire our Supposition callback */
-    _onBeforeShow.call(this); /* fire stored callbacks */
-    },
-    onHide: function() {
-    onHide.call(this); /* fire our Supposition callback */
-    _onHide.call(this); /* fire stored callbacks */
-    }
-    });
+      $.extend($.fn.superfish.o[this.serial],{
+        onBeforeShow: function() {
+          onBeforeShow.call(this); /* fire our Supposition callback */
+          _onBeforeShow.call(this); /* fire stored callbacks */
+        },
+        onHide: function() {
+          onHide.call(this); /* fire our Supposition callback */
+          _onHide.call(this); /* fire stored callbacks */
+        }
+      });
     });
   };
 })(jQuery);
