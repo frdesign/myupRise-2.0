@@ -274,7 +274,7 @@ function tb_wall_retro_process_image(&$variables) {
   if (isset($variables['width']) && isset($variables['height'])) {
     $variables['attributes']['data-src'] = file_create_url($variables['path']);
     $file_url = tb_wall_retro_create_blank_image($variables['width'], $variables['height']);
-    $variables['path'] = $file_url;
+    if ((arg(2) !== 'map')) {$variables['path'] = $file_url;}  // Edited so Leaflet map pop up images would show up
   }
   else {
   	$size = tb_wall_retro_get_image_size($variables['path']);

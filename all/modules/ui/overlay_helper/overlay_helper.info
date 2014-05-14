@@ -1,0 +1,6 @@
+name = Overlay Helper
+description = Adds extra functionality to the overlay core module.
+core = 7.x
+
+dependencies[] = overlay
+files[] = overlay_helper.module

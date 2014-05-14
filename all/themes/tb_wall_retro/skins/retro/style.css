@@ -1128,15 +1128,10 @@ body.tb-wall-popup-iframe {
 
 /*NODE *********************/
 
-/*Simplify image addition helper text*/
-.form-item-field-status-image-und-0 div.description,
-.form-item-field-quote-image-und-0 div.description {
-	display: none;
-}
 
 /*Increase node content size*/
 .node-full div.node-content {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: black;
 }
 
@@ -1170,26 +1165,25 @@ body.tb-wall-popup-iframe {
 	float: none;
 }
 
-/*Hide citations field on Quote node create form*/
-div.form-item-quotes-citation {
-	display: none;
-}
 
 /*Move node links in quote previes downs so they dont crash against quote author*/
 .grid.views-col .node-links ul.links {
 	margin-top: 20px;
 }
 
-/*make preview content type icons smaller*/
-.grid.views-col.tb-wall-grid .grid-inner .node .field-name-field-type-icon img {
-	width: 30px;
-	height: auto;
+/*Give more breathing room to address field in Place content type*/
+.field-type-addressfield {
+	margin-top: 20px;
 }
 
-/*Hide content type icon select field from node create form*/
-.form-item-field-type-icon-und-0 {
-	display: none;
+/*make preview content type icons smaller*/
+.node .field-name-field-type-icon img,
+.grid.views-col .grid-inner .node-teaser .field-name-field-type-icon img
+{
+	width: 25px !important;
+	height: auto !important;
 }
+
 
 /*Tabs*/
 div.tabs li a {
@@ -1298,6 +1292,24 @@ div.field-name-comment-body p {
 /*Make node link button text white */
 .node-full .node-links ul.links li a {
 	color: #D36B45;
+}
+
+/*Simplify image addition helper text*/
+.form-item-field-status-image-und-0 div.description,
+.form-item-field-quote-image-und-0 div.description,
+.node-place-form #edit-field-image-und .form-type-mfw-managed-file div.description,
+.node-place-form #edit-field-image-und .form-type-mfw-managed-file label {
+	display: none;
+}
+
+/*Hide citations field on Quote node create form*/
+div.form-item-quotes-citation {
+	display: none;
+}
+
+/*Hide content type icon select field from node create form*/
+.form-item-field-type-icon-und-0 {
+	display: none;
 }
 
 /*Hide text format selector for web link content type*/
@@ -1569,7 +1581,40 @@ fieldset#edit-timezone {
 	width: 100%;
 }
 
+/*style add node icons on buttons*/
+img.add-node-icon {
+	width: 20px;
+	height: auto;
+	position: absolute;
+	margin-left: -5px;
+}
 
+a.add-node-button span {
+	padding-left: 23px;
+}
+
+
+/*Leaflet Places view*/
+.leaflet-popup-content .item-list ul {
+	list-style: none;
+}
+
+.leaflet-popup-content h3 {
+	line-height: 0;
+}
+
+.leaflet-popup-content .popup-location {
+	padding: 0 0 0 0;
+}
+
+.leaflet-popup-content .popup-description {
+	padding: 5px 0 0 0;
+}
+
+.leaflet-popup-content .popup-more-link {
+	float: right;
+	margin-top: -12px;
+}
 
 /*********MISCELANEOUS***********************************************/
 

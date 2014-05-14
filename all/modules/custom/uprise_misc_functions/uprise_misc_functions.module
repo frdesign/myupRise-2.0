@@ -225,3 +225,20 @@ function get_sort_values($view_results) {
     return $returned_result;
 }
 
+
+/**
+ * Change Cloud tab on user profile to show user name
+ */
+
+function uprise_misc_functions_menu_alter(&$items) {
+  $items['user/%user']['title'] = 'uprise_misc_functions_title_callback';
+
+}
+
+function uprise_misc_functions_title_callback() {
+    $user = user_load(arg(1));
+    $userName = $user['name'];
+    $title = $userName;
+    //return $title;
+  return 'test';
+}
